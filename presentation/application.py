@@ -14,3 +14,6 @@ class Application:
         self.file_loader = FileSystemLoader(config["TEMPLATES"]["TEMPLATES_DIR"])
         self.env = Environment(loader=self.file_loader)
         self.template = self.env.get_template(self.template_name)
+
+    def render(self, **values):
+        return self.template.render(values)

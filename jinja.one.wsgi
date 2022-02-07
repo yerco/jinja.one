@@ -1,10 +1,13 @@
-import yaml, os
 from presentation.application import Application
+from business.error_handler import ErrorHandler
 
 def application(environ, start_response):
-    application = Application()
-    output = application.template.render(character="AxTp")
-    
+    try:
+        application = Application()
+        output = application.render(character="Olafo", another="Otro")
+    except Exception as e:
+        error_handler = ErrorHandler()
+        output = error_handler.error_message()
     status = '200 OK'
     response_headers = [('Content-type', 'text/html'),
                         ('Content-Length', str(len(output)))]

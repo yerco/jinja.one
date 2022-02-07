@@ -10,3 +10,6 @@ APPLICATIONS_DIRS:
   BUSINESS_DIR: /var/www/jinja.one/business
 
 CONFIG_DIR: /var/www/jinja.one/include/configs
+
+DEBUGGING: true
+
