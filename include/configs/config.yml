@@ -1,0 +1,12 @@
+TEMPLATES:
+  INITIAL_TEMPLATE: hello_world.html
+  TEMPLATES_DIR: /var/www/jinja.one/presentation/templates/
+  TEMPLATES_CONFIG: site.conf
+
+SITE_ROOT: /var/www/jinja.one
+
+APPLICATIONS_DIRS:
+  PRESENTATION_DIR: /var/www/jinja.one/presentation
+  BUSINESS_DIR: /var/www/jinja.one/business
+
+CONFIG_DIR: /var/www/jinja.one/include/configs
