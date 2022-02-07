@@ -11,5 +11,5 @@ APPLICATIONS_DIRS:
 
 CONFIG_DIR: /var/www/jinja.one/include/configs
 
-DEBUGGING: true
+DEBUGGING: True
 
